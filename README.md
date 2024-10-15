@@ -1,5 +1,7 @@
 # NewsApp
 
+<img width="1260" alt="Screenshot 2024-10-15 at 11 31 23 PM" src="https://github.com/user-attachments/assets/dc23a0c3-b7bf-4cf9-893c-33d0efacbc7c">
+
 ## Overview
 
 NewsApp is a modern web application built using React.js that allows users to read the latest news from various categories and countries. The app fetches news articles from the GNews API and displays them in a user-friendly interface. Users can easily navigate through different news categories such as sports, technology, entertainment, health, and more.
