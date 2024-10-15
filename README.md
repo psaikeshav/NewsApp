@@ -68,3 +68,4 @@ Contributions are welcome! Please fork the repository and create a pull request 
 
 For any inquiries or feedback, please contact me at [LinkedIn](https://www.linkedin.com/in/saikeshav/).
 # NewsAppli
+# NewsAppli
