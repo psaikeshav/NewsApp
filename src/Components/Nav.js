@@ -30,7 +30,7 @@ const Nav = ({ setCountry, country }) => {
           <div className="logo">
             <img src={logo} alt="" />
             <NavLink to="/" style={{textDecoration:"none"}}>
-            <h2>NEWSAPP</h2>
+            <h2>Global News Hub</h2>
             </NavLink>
           </div>
           <div className="navitems">
