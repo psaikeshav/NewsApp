@@ -5,7 +5,7 @@ import { FaGithub} from 'react-icons/fa';
 const About = () => {
   return (
     <div id='about'>
-        <h2>NewsApp</h2>
+        <h2>Global News Hub</h2>
         <p>This news web app is made using React JS. This web app uses a news api to fetch daily new news of the world.You can get news from various countries and of many categories like sports,
          technology, entertainment, health etc.</p>
         <div className="links">
