@@ -2,7 +2,7 @@ import NewsFeed from "./Components/NewsFeed";
 import Nav from "./Components/Nav";
 import About from "./Components/About";
 import NotFound from "./Components/NotFound";
-import {BrowserRouter as Router,Routes,
+import {HashRouter as Router,Routes,
   Route} from "react-router-dom";
 import {useState} from "react";
 
