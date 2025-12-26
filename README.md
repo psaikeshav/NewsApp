@@ -1,5 +1,4 @@
 # NewsApp
-[![Netlify Status](https://api.netlify.com/api/v1/badges/d5101da0-4129-4650-978b-e0022e8ada22/deploy-status)](https://app.netlify.com/sites/newsappbysaikeshav/deploys)
 
 <img width="1260" alt="Screenshot 2024-10-15 at 11 31 23 PM" src="https://github.com/user-attachments/assets/dc23a0c3-b7bf-4cf9-893c-33d0efacbc7c">
 
