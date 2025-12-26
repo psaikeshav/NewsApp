@@ -68,6 +68,21 @@ nav h2 {
 /* Navbar styling ends */
 
 /* NewsItem styling starts */
+.newsitem-link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.newsitem-link:hover .newsitem {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
+  transform: scale(1.02);
+}
+
+.newsitem-link:hover .news_image img {
+  filter: brightness(1.1);
+}
+
 .news_image img {
   width: 240px;
   height: 200px;
@@ -247,41 +262,234 @@ footer {
   align-content: center;
 }
 
+/* About Page Styles */
 #about {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin: 50px 0 0 20px;
-  gap: 2rem;
-}
-#about p {
-  line-height: 1.5;
-  width: 60vw;
+  align-items: center;
+  padding: 0;
+  gap: 0;
+  background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%);
+  min-height: calc(100vh - 60px);
 }
 
-#about .links a {
-  border-radius: 2px;
-  border: none;
+.about-hero {
+  width: 100%;
+  background: linear-gradient(135deg, #313552 0%, #4a4e69 50%, #313552 100%);
+  padding: 60px 20px;
+  text-align: center;
   color: white;
-  background: #cf2d55;
-  font-size: 16px;
-  padding: 5px 10px;
-  text-decoration: none;
-  color: white;
-  margin-right: 5px;
 }
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #00e1ff, #fc4c78, #00e1ff);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.about-hero .tagline {
+  font-size: 1.2rem;
+  color: #b8b8b8;
+  width: auto;
+}
+
+.about-section {
+  width: 100%;
+  max-width: 1000px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  color: #313552;
+  margin-bottom: 30px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 0 10px;
+}
+
+.feature-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+.feature-card h3 {
+  margin: 15px 0 10px;
+  color: #313552;
+}
+
+.feature-card p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  width: auto;
+}
+
+.tech-stack {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.tech-item img {
+  height: 60px;
+}
+
+.tech-item span {
+  font-weight: 600;
+  color: #313552;
+}
+
 #react {
   animation: rotate 3s linear infinite;
 }
+
 @keyframes rotate {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
 }
+
+.about-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.api-btn {
+  background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+  color: white;
+}
+
+.github-btn {
+  background: linear-gradient(135deg, #333 0%, #24292e 100%);
+  color: white;
+}
+
+.about-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.developer-section {
+  background: linear-gradient(135deg, #313552 0%, #4a4e69 100%);
+  padding: 50px 20px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.developer-section h2 {
+  color: white;
+}
+
+.developer-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 350px;
+  margin: 0 auto;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+}
+
+.developer-avatar {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #cf2d55 0%, #922a44 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.developer-card h3 {
+  color: #313552;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.developer-card p {
+  color: #666;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.linkedin-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #0077b5;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.linkedin-btn:hover {
+  background: #005885;
+  transform: scale(1.05);
+}
+
+.about-footer {
+  padding: 30px;
+  text-align: center;
+  color: #666;
+  background: transparent;
+}
+
+.about-footer p {
+  width: auto;
+}
+
 .date {
   color: #922a44;
   font-size: 12px;
@@ -480,4 +688,94 @@ footer {
   #error h2 {
     font-size: 20px;
   }
+  .feature-banner {
+    flex-direction: column;
+    padding: 12px 15px;
+    gap: 8px;
+  }
+  .feature-item {
+    font-size: 12px;
+  }
+}
+
+/* Feature Banner Styles */
+.feature-banner {
+  background: linear-gradient(135deg, #313552 0%, #4a4e69 100%);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  background: rgba(255,255,255,0.1);
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+}
+
+.feature-item strong {
+  color: #00e1ff;
+}
+
+.category-badge {
+  background: linear-gradient(135deg, #cf2d55 0%, #922a44 100%);
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: white;
+  font-size: 0.9em;
+}
+
+.category-hint {
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Country Selector Styles */
+.country-selector {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.country-label {
+  font-size: 18px;
+}
+
+select#country {
+  background: linear-gradient(135deg, #00e1ff 0%, #00b4cc 100%);
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  min-width: 120px;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+select#country:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 10px rgba(0,225,255,0.4);
+}
+
+select#country:focus {
+  outline: 2px solid #fc4c78;
+  outline-offset: 2px;
 }

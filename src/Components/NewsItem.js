@@ -8,11 +8,13 @@ const NewsItem = ({ news }) => {
 
   return (
     <>
-      <div className="newsitem">
-        <NewsImage url={news.image} title={news.title}  />
-        <NewsSource source={news.source.name} />
-        <NewsSection title={news.title} description={news.description} newsurl={news.url} datepublish={moment(news.publishedAt).utc().format('dddd Do MMMM, YYYY')}/>
-      </div>
+      <a href={news.url} target="_blank" rel="noreferrer" className="newsitem-link">
+        <div className="newsitem">
+          <NewsImage url={news.image} title={news.title}  />
+          <NewsSource source={news.source.name} />
+          <NewsSection title={news.title} description={news.description} newsurl={news.url} datepublish={moment(news.publishedAt).utc().format('dddd Do MMMM, YYYY')}/>
+        </div>
+      </a>
     </>
   );
 };

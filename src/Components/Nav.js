@@ -106,19 +106,22 @@ const Nav = ({ setCountry, country }) => {
                   Sports
                 </NavLink>
               </li>
-              <li>
+              <li className="country-selector">
+                <label htmlFor="country" className="country-label">🌍</label>
                 <select
-                  name=""
+                  name="country"
                   id="country"
                   onChange={(e) => setCountry(e.target.value)}
                   value={country}
+                  title="Select a country to view news from that region"
+                  aria-label="Select country for news"
                 >
-                  <option value="in">IN</option>
-                  <option value="us">US</option>
-                  <option value="au">AUS</option>
-                  <option value="pk">PAK</option>
-                  <option value="gbr">UK</option>
-                  <option value="ca">CA</option>
+                  <option value="in">🇮🇳 India</option>
+                  <option value="us">🇺🇸 USA</option>
+                  <option value="au">🇦🇺 Australia</option>
+                  <option value="pk">🇵🇰 Pakistan</option>
+                  <option value="gbr">🇬🇧 UK</option>
+                  <option value="ca">🇨🇦 Canada</option>
                 </select>
               </li>
               <NavLink to="about">
