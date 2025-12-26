@@ -18,7 +18,7 @@ const NewsFeed = ({ category, country }) => {
     const fetchArticles = async () => {
       try {
         setIsLoading(true);
-        const API_KEY = process.env.REACT_APP_GEONEWS_API_KEY || "6bcfe8490d4bb38ee34b4aaaec8ca089";
+        const API_KEY = "6bcfe8490d4bb38ee34b4aaaec8ca089";
         const URL = `https://gnews.io/api/v4/top-headlines?token=${API_KEY}&topic=${category}&lang=en&country=${country}`;
         const response = await axios.get(URL, { signal: ac.signal });
         const news = response.data.articles;
